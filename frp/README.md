@@ -13,3 +13,9 @@ docker run -d --network=host -v /path/to/frps.ini:/frps.ini gaoliang/frp
 # client mode, config file must be mount to /frpc.ini
 docker run -d --network=host -v /path/to/frpc.ini:/frpc.ini gaoliang/frp
 ```
+
+### supported tags:
+```
+latest
+v0.37.0
+```
