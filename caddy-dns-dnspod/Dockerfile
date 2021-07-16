@@ -4,4 +4,4 @@ RUN xcaddy build \
     --with github.com/caddy-dns/dnspod
 
 FROM caddy:${CADDY_VERSION}
-COPY --from=builder /usr/bin/caddy /usr/bincaddy
+COPY --from=builder /usr/bin/caddy /usr/bin/caddy
