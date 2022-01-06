@@ -2,13 +2,13 @@
 
 ## Usage
 ```
-docker run  -it --rm -v $(pwd):/csv csvkit <csvkit commands>
+docker run --rm -v $(pwd):/csv csvkit <csvkit commands>
 ```
 
 For example, if you need convert a Excel to a CSV, you can run
 
 ```
-docker run  -it --rm -v $(pwd):/csv csvkit in2csv ne_1033_data.xlsx 
+docker run --rm -v $(pwd):/csv csvkit in2csv ne_1033_data.xlsx 
 ```
 
 [see more csvkit commands](https://csvkit.readthedocs.io)
@@ -16,5 +16,5 @@ docker run  -it --rm -v $(pwd):/csv csvkit in2csv ne_1033_data.xlsx
 ## Optional usage 1
 
 ```
-alias csvkit="docker run  -it --rm -v $(pwd):/csv csvkit"
+alias csvkit="docker run --rm -v $(pwd):/csv csvkit"
 ```
